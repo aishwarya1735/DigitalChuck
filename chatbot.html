@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+</head>
+
+<body>
+    
+    <span><iframe width="1500" height="500" src="https://www.youtube.com/embed/xPGH1RGqy9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+    
+    <span><h1 style="color: teal;"><font color="white">Sem 2-2 PDF's ready</font></h1></span>
+    <button type="menu"><a id="a1" download="file1.txt"><h2><i>Javascript </i></h2></a></button></br><br>
+    <button type="menu"><a id="a2" download="file2.txt"><h2><i>Probability and Statistics</i></h2></a></button></br><br>
+    <button type="menu"><a id="a3" download="file3.txt"><h2><i>Advanced Data Structures</i></h2></a></button>
+    </br><br>
+    <button type="menu"><a id="a4" download="file4.txt"><h2><i>Database Management System</i></h2></a></button></br><br>
+    <button type="menu"><a id="a5" download="file5.txt"><h2><i>Software Engineering</i></h2></a></button></br><br>
+    <button type="menu"><a id="a6" download="file6.txt"><h2><i>Formal Language of Automata Theory</i></h2></a></button></br><br>
+    <script>
+
+        const a1 = document.getElementById("a1");
+        const a2 = document.getElementById("a2");
+        const a3 = document.getElementById("a3");
+        const a4 = document.getElementById("a4");
+        const a5 = document.getElementById("a5");
+        const a6 = document.getElementById("a6");
+      const blob1 =  new Blob(["JavaScript"," pdfs"],{type: "text/plain"})
+      const blob2 =  new Blob(["Probability and Statistics"," pdfs"],{type: "text/plain"})
+      const blob3 =  new Blob(["Advanced Data Structures"," pdfs"],{type: "text/plain"})
+      const blob4 =  new Blob(["Database Management System"," pdfs"],{type: "text/plain"})
+      const blob5 =  new Blob(["Software Engineering"," pdfs"],{type: "text/plain"})
+      const blob6 =  new Blob(["Formal Language of Automata Theory"," pdfs"],{type: "text/plain"})
+        a1.href = URL.createObjectURL(blob1);
+        a2.href = URL.createObjectURL(blob2);
+        a3.href = URL.createObjectURL(blob3);
+        a4.href = URL.createObjectURL(blob4);
+        a5.href = URL.createObjectURL(blob5);
+        a6.href = URL.createObjectURL(blob6);
+    </script>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="chatbot.js"></script>
+
+</html>

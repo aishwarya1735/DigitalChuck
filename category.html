@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+   <title> Category</title>
+   <link rel="stylesheet" href="mainstyle.css">
+   <style>
+    .pushable {
+      background:#687477;
+      border-radius: 20px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+      margin-left:50px;
+    }
+    .front {
+      display: block;
+      padding: 50px 42px;
+      border-radius: 20px;
+      font-size: 2rem;
+      background:#403234;
+      color: #f7f3f5;
+      transform: translateY(-6px);
+      width:250px;
+      height:150px;
+    }
+  
+    .pushable:active .front {
+      transform: translateY(-2px);
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <h1>DIGITAL CHUCK</h1>
+      <div class="navigation">
+        <div class="nav-items">
+          <a href="main.html">Home</a>
+          <a href="category.html">Category</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="home flex-center" id="home">
+    <div class="info">
+     <a href="chatbot.html"> <button class="pushable">
+        <span class="front">
+        Chat Bot
+        </span>
+      </button></a>
+    <a href="remainder.html"> <button class="pushable">
+        <span class="front">
+        Remainder
+        </span>
+      </button></a>
+    <a href="quizcat.html">
+      <button class="pushable">
+        <span class="front">
+        Quiz
+        </span>
+      </button></a>
+    </div>
+  </section>
+</body>
+</html>

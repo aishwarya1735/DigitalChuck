@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizcat</title>
+    <style>
+        body{
+            background-image: url('https://www.stockvault.net/data/2019/08/28/268873/preview16.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .pushable {
+          background:#687477;
+          border-radius: 20px;
+          border: none;
+          padding: 0px;
+          cursor: pointer;
+          outline-offset: 4px;
+          margin-left:50px;
+          margin-bottom: 30px;
+        }
+        .front {
+          display: block;
+          padding: 50px 42px;
+          border-radius: 20px;
+          font-size: 2rem;
+          background:#403234;
+          color: #f7f3f5;
+          transform: translateY(-6px);
+          width:150px;
+          height:50px;
+        }
+      
+        .pushable:active .front {
+          transform: translateY(-2px);
+        }
+        .home{
+    position: relative;
+    max-width: 1250px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem;
+    flex-direction: column;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info p{
+    color: #f7f3f5;
+    font-size: var(--normal-font-size);
+    max-width: 500px;
+    font-size: 30px;
+}
+.select
+{
+    font-size: 80px;
+     font-family: Arial;
+     text-align: center;
+     padding-top: 70px;
+}
+      </style>    
+</head>
+<body>
+ 
+    <div class="select">
+      <b> Choose A Genre... </b>
+    </div>
+    
+    <div class="home flex-center" id="home">
+        <div class="info">
+         <a href="logical.html"><button class="pushable">
+            <span class="front">
+            Logic
+            </span>
+          </button></a>
+         <a href="gk.html"><button class="pushable">
+            <span class="front">
+               GK
+            </span>
+          </button></a>
+        <a href="verbal.html">
+          <button class="pushable">
+            <span class="front">
+            Verbal
+            </span>
+          </button></a>
+         <a href="technology.html"> <button class="pushable">
+            <span class="front">
+            Technology
+            </span>
+          </button></a>
+          <a href="riddles.html"><button class="pushable">
+            <span class="front">
+               Riddles
+            </span>
+          </button></a>
+        </div>
+    </div>
+</body>
+</html>
